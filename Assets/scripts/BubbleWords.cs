@@ -40,7 +40,7 @@ public class BubbleWords : MonoBehaviour {
 		this.enabled = true;
 		npcCol = col.gameObject;
 		this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
-		line = conversation [0];
+		//line = new string (conversation[0]);
 
 	}
 }
