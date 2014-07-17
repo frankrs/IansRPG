@@ -13,4 +13,11 @@ public class NPCScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+	void Talk(Collider col){
+		
+	}
+
+
 }

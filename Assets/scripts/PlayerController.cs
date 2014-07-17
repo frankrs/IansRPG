@@ -16,17 +16,6 @@ public class PlayerController : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D col){
-		print ("Hi");
-		//If we collide with an NPC
-		if (col.gameObject.tag == "NPC") {
 
-			gameObject.SendMessage("Talk",col);
-			col.gameObject.SendMessage("Talk",col);
-		}
-	}
 
-	void Talk(){
-
-	}
 }

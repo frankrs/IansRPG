@@ -36,13 +36,33 @@ public class BubbleWords : MonoBehaviour {
 		}
 	}
 
-	void Talk(Collider2D col){
+	void Talk(Collider col){
 		this.enabled = true;
 		npcCol = col.gameObject;
-		this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
+		//this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
 		//line = new string (conversation[0]);
 
 	}
+
+
+	void OnTriggerEnter(Collider col){
+		print ("Hi");
+		//If we collide with an NPC
+		if (col.gameObject.tag == "NPC") {
+			
+			gameObject.SendMessage("Talk",col);
+			col.gameObject.SendMessage("Talk",col);
+		}
+	}
+
+
+
+
+
+
+
+
+
 }
 
 [System.Serializable]

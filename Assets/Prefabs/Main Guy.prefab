@@ -27,6 +27,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 8
   m_Name: Main Guy
   m_TagString: Player
@@ -169,6 +170,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2fbfd73edec2a4f928ede134a5027b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198c986b372252a45ba1d9079790cb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: 0
+  button: {fileID: 0}
+  conversation:
+    Lines: []
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
