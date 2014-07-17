@@ -1,0 +1,27 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.27
+# URL: http://www.unwrap3d.com
+# Time: Thu May 05 10:14:32 2011
+# num_materials: 2
+
+newmtl metal01
+Ka 0.000000 0.000000 0.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.250000 0.250000 0.250000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd metal01_d.tga
+map_Bump metal01_h.tga
+
+newmtl wood_plank_01
+Ka 0.000000 0.000000 0.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd wood_planks_01.tga
+map_Bump wood_planks_01_H.tga
+
+# num_materials: 2
