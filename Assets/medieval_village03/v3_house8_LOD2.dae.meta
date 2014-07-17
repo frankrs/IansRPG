@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: 5d94d8b0d478fea449ef5bcadba9d3a2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bricks_old06
+    100002: bricks_old06__2___Image___Texture_
+    100004: Camera
+    100006: con_dirt_01
+    100008: con_dirt_01__2___Image___Texture_
+    100010: Directional_Light
+    100012: door_004
+    100014: door_004__2___Image___Texture_
+    100016: Render
+    100018: roof_02
+    100020: roof_02__2___Image___Texture_
+    100022: //RootNode
+    100024: windows_c
+    100026: windows_c__2___Image___Texture_
+    400000: bricks_old06
+    400002: bricks_old06__2___Image___Texture_
+    400004: Camera
+    400006: con_dirt_01
+    400008: con_dirt_01__2___Image___Texture_
+    400010: Directional_Light
+    400012: door_004
+    400014: door_004__2___Image___Texture_
+    400016: Render
+    400018: roof_02
+    400020: roof_02__2___Image___Texture_
+    400022: //RootNode
+    400024: windows_c
+    400026: windows_c__2___Image___Texture_
+    2300000: bricks_old06
+    2300002: con_dirt_01
+    2300004: door_004
+    2300006: roof_02
+    2300008: windows_c
+    3300000: bricks_old06
+    3300002: con_dirt_01
+    3300004: door_004
+    3300006: roof_02
+    3300008: windows_c
+    4300000: Geometry_con_dirt_01Node
+    4300002: Geometry_door_004Node
+    4300004: Geometry_roof_02Node
+    4300006: Geometry_windows_cNode
+    4300008: Geometry_bricks_old06Node
+    4300010: con_dirt_01
+    4300012: door_004
+    4300014: roof_02
+    4300016: windows_c
+    4300018: bricks_old06
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
