@@ -1,0 +1,16 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.27
+# URL: http://www.unwrap3d.com
+# Time: Thu May 05 10:19:41 2011
+# num_materials: 1
+
+newmtl metal_cup
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd metal_cup.tga
+
+# num_materials: 1
