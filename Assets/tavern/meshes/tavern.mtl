@@ -1,0 +1,62 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.27
+# URL: http://www.unwrap3d.com
+# Time: Thu May 05 10:15:49 2011
+# num_materials: 6
+
+newmtl Con_Dirt_01
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd con_dirt_01.tga
+
+newmtl WoodPlanks
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd WoodPlanks.tga
+
+newmtl roof_01
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd roof_01.tga
+
+newmtl Bricks_Old_08
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd bricks_old_08.tga
+map_Bump bricks_old_08_H.tga
+
+newmtl Wood_Planks_Ornaments
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd WoodPlanks_ornaments.tga
+
+newmtl doorwindow_set
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd doorwindow_set.tga
+
+# num_materials: 6
