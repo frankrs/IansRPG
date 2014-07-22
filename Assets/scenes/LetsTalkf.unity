@@ -2434,7 +2434,7 @@ GameObject:
   - 114: {fileID: 142750592}
   - 135: {fileID: 142750591}
   - 54: {fileID: 142750590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Talker
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -2493,7 +2493,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversation:
-    Lines: []
+    Lines:
+    - Hi
+    - WhatUp
 --- !u!1 &143439363
 GameObject:
   m_ObjectHideFlags: 0
@@ -9813,6 +9815,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
+      propertyPath: conversation.Lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400054, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
       propertyPath: m_LocalPosition.x
       value: 105.315491
@@ -9848,6 +9854,18 @@ Prefab:
     - target: {fileID: 400054, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
+      propertyPath: conversation.Lines.Array.data[0]
+      value: Hi
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
+      propertyPath: conversation.Lines.Array.data[1]
+      value: WhatUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}

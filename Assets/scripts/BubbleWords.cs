@@ -18,7 +18,7 @@ public class BubbleWords : MonoBehaviour {
 	void Update () {
 		if (!talking && Input.GetKeyDown(yButton)) {
 			talking = true;
-			gameObject.SendMessage("Converse");
+//			gameObject.SendMessage("Converse");
 		}
 	}
 
@@ -39,7 +39,7 @@ public class BubbleWords : MonoBehaviour {
 	void Talk(Collider col){
 		this.enabled = true;
 		npcCol = col.gameObject;
-		//this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
+		this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
 		//line = new string (conversation[0]);
 
 	}
