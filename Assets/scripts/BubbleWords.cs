@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BubbleWords : MonoBehaviour {
 	public bool talking = false;
-	public Texture button;
+	public Texture ybutton;
 	public Texture bButton;
 	private KeyCode yButton = KeyCode.JoystickButton3;
 	public KeyCode xBoxB = KeyCode.JoystickButton1;
@@ -24,27 +24,36 @@ public class BubbleWords : MonoBehaviour {
 			talking = true;
 		}
 		if(talking && Input.GetKeyDown(xBoxB)){
-			Debug.Log("next");
-			converseLine = converseLine+1;
+			if(converseLine<conversation.Lines.Length-1){
+				converseLine = converseLine+1;
+				}
+			else{
+				EndTalk();
+			}
 		}
 	}
 
 	void OnGUI(){
 
 		if (talking) {
-			GUILayout.BeginArea (new Rect (Screen.width / 8f, Screen.height * .75f, Screen.width * .75f, Screen.height * .25f));
+			GUILayout.BeginArea (new Rect (Screen.width * .25f, Screen.height * .75f, Screen.width * .51f, Screen.height * .25f));
 			GUILayout.BeginHorizontal ("box");
-			GUILayout.Box(conversation.portrait[converseLine],GUILayout.Height(Screen.height*.2f),GUILayout.Width(Screen.height*.2f));
-			GUILayout.Box (conversation.Lines[converseLine]);
+			GUILayout.Box(conversation.portrait[converseLine],GUILayout.Height(Screen.height*.2f),GUILayout.Width(Screen.width*.1f));
+			GUILayout.Box (conversation.Lines[converseLine],GUILayout.Width(Screen.width*.3f),GUILayout.Height(Screen.height*.2f));
 			GUILayout.BeginVertical();
-			GUILayout.Label(bButton,GUILayout.Height(Screen.height*.1f));
+			GUILayout.Label(bButton,GUILayout.Height(Screen.height*.1f),GUILayout.Width(Screen.width*.1f));
 			GUILayout.Label("Next");
 			GUILayout.EndVertical();
 			GUILayout.EndHorizontal ();
 			GUILayout.EndArea ();
 		}
 		else {
-			GUI.Box(new Rect(0,0,75,75),button);
+			GUILayout.BeginArea (new Rect (Screen.width*.45f, Screen.height * .15f, Screen.width * .1f, Screen.width * .1f));
+			GUILayout.BeginVertical("label");
+			GUILayout.Label(ybutton,GUILayout.Height(Screen.height*.1f),GUILayout.Width(Screen.height*.1f));
+			GUILayout.Label("Talk");
+			GUILayout.EndVertical();
+			GUILayout.EndArea ();
 		}
 	}
 
@@ -55,6 +64,13 @@ public class BubbleWords : MonoBehaviour {
 
 	}
 
+	void EndTalk(){
+		this.enabled = false;
+		talking = false;
+		converseLine = 0;
+		
+	}
+
 
 	void OnTriggerEnter(Collider col){
 		//If we collide with an NPC
@@ -63,14 +79,17 @@ public class BubbleWords : MonoBehaviour {
 			gameObject.SendMessage("Talk",col);
 			col.gameObject.SendMessage("Talk",col);
 		}
+
 	}
 
 
 
-
-
-
-
+	void OnTriggerExit(Collider col){
+		//If we leave an NPC
+		if (col.gameObject.tag == "NPC") {
+				EndTalk();
+		}
+	}
 
 
 }

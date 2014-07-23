@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talking: 0
-  button: {fileID: 2800000, guid: 907c582e83cf89e49a8723878b3cbb2b, type: 3}
+  ybutton: {fileID: 2800000, guid: 907c582e83cf89e49a8723878b3cbb2b, type: 3}
   bButton: {fileID: 2800000, guid: ed726350459d92a41a9ba3add9b4c5c6, type: 3}
   xBoxB: 331
   conversation: {fileID: 0}

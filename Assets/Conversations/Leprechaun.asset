@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Name: Leprechaun
   m_EditorClassIdentifier: 
   Lines:
-  - I'm just a poor little leprachaun looking for my gold
-  - IDK
-  - OMG
-  - WTF
+  - I'm just a poor little leprachaun looking for me gold
+  - I don't know where your gold is I just got here into town
+  - Well, if you find it or hear anything please let me know
+  - Sure thing little fella
   portrait:
   - {fileID: 2800000, guid: 67393377b82c3bf4a95d58e7d2727d4f, type: 3}
   - {fileID: 2800000, guid: 16261d91166786f419d17f5c0f1c2847, type: 3}
   - {fileID: 2800000, guid: 67393377b82c3bf4a95d58e7d2727d4f, type: 3}
   - {fileID: 2800000, guid: 16261d91166786f419d17f5c0f1c2847, type: 3}
-  question: 
+  question: 00000000
