@@ -5,5 +5,6 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Conversation : ScriptableObject {
 	public string[] Lines;
-	public Texture2D portrait;
+	public Texture2D[] portrait;
+	public bool[] question;
 }

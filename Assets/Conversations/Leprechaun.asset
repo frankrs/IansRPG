@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: Leprechaun
   m_EditorClassIdentifier: 
   Lines:
-  - Hi
+  - I'm just a poor little leprachaun looking for my gold
   - IDK
   - OMG
   - WTF
-  portrait: {fileID: 0}
+  portrait:
+  - {fileID: 2800000, guid: 67393377b82c3bf4a95d58e7d2727d4f, type: 3}
+  - {fileID: 2800000, guid: 16261d91166786f419d17f5c0f1c2847, type: 3}
+  - {fileID: 2800000, guid: 67393377b82c3bf4a95d58e7d2727d4f, type: 3}
+  - {fileID: 2800000, guid: 16261d91166786f419d17f5c0f1c2847, type: 3}
+  question: 

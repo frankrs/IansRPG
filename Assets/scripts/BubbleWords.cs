@@ -4,10 +4,13 @@ using System.Collections;
 public class BubbleWords : MonoBehaviour {
 	public bool talking = false;
 	public Texture button;
+	public Texture bButton;
 	private KeyCode yButton = KeyCode.JoystickButton3;
+	public KeyCode xBoxB = KeyCode.JoystickButton1;
 	private GameObject npcCol;
 	public Conversation conversation;
 	public int converseLine = 0;
+
 
 
 	// Use this for initialization
@@ -20,6 +23,10 @@ public class BubbleWords : MonoBehaviour {
 		if (!talking && Input.GetKeyDown(yButton)) {
 			talking = true;
 		}
+		if(talking && Input.GetKeyDown(xBoxB)){
+			Debug.Log("next");
+			converseLine = converseLine+1;
+		}
 	}
 
 	void OnGUI(){
@@ -27,7 +34,12 @@ public class BubbleWords : MonoBehaviour {
 		if (talking) {
 			GUILayout.BeginArea (new Rect (Screen.width / 8f, Screen.height * .75f, Screen.width * .75f, Screen.height * .25f));
 			GUILayout.BeginHorizontal ("box");
+			GUILayout.Box(conversation.portrait[converseLine],GUILayout.Height(Screen.height*.2f),GUILayout.Width(Screen.height*.2f));
 			GUILayout.Box (conversation.Lines[converseLine]);
+			GUILayout.BeginVertical();
+			GUILayout.Label(bButton,GUILayout.Height(Screen.height*.1f));
+			GUILayout.Label("Next");
+			GUILayout.EndVertical();
 			GUILayout.EndHorizontal ();
 			GUILayout.EndArea ();
 		}

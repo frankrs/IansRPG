@@ -176,15 +176,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 198c986b372252a45ba1d9079790cb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   talking: 0
-  button: {fileID: 0}
-  conversation:
-    Lines: []
+  button: {fileID: 2800000, guid: 907c582e83cf89e49a8723878b3cbb2b, type: 3}
+  bButton: {fileID: 2800000, guid: ed726350459d92a41a9ba3add9b4c5c6, type: 3}
+  xBoxB: 331
+  conversation: {fileID: 0}
+  converseLine: 0
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
