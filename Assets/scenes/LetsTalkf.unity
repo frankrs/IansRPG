@@ -2492,10 +2492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5957fce310703c4f845dd9bff3dc83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation:
-    Lines:
-    - Hi
-    - WhatUp
+  conversation: {fileID: 11400000, guid: 6391b97add0f34c44ab8563789e7c06f, type: 2}
 --- !u!1 &143439363
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,6 +9864,11 @@ Prefab:
       propertyPath: conversation.Lines.Array.data[1]
       value: WhatUp
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
+      propertyPath: conversation
+      value: 
+      objectReference: {fileID: 11400000, guid: 6391b97add0f34c44ab8563789e7c06f,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcdd105b1f099ee40b32cf24868f6899, type: 2}
   m_RootGameObject: {fileID: 1204707797}
@@ -26284,8 +26286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: 0
   button: {fileID: 2800000, guid: 907c582e83cf89e49a8723878b3cbb2b, type: 3}
-  conversation:
-    Lines: []
+  conversation: {fileID: 0}
+  converseLine: 0
 --- !u!143 &1441795116
 CharacterController:
   m_ObjectHideFlags: 0

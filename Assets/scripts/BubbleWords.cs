@@ -7,7 +7,8 @@ public class BubbleWords : MonoBehaviour {
 	private KeyCode yButton = KeyCode.JoystickButton3;
 	private GameObject npcCol;
 	public Conversation conversation;
-	private string line;
+	public int converseLine = 0;
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,6 @@ public class BubbleWords : MonoBehaviour {
 	void Update () {
 		if (!talking && Input.GetKeyDown(yButton)) {
 			talking = true;
-//			gameObject.SendMessage("Converse");
 		}
 	}
 
@@ -27,7 +27,7 @@ public class BubbleWords : MonoBehaviour {
 		if (talking) {
 			GUILayout.BeginArea (new Rect (Screen.width / 8f, Screen.height * .75f, Screen.width * .75f, Screen.height * .25f));
 			GUILayout.BeginHorizontal ("box");
-			GUILayout.Box (line);
+			GUILayout.Box (conversation.Lines[converseLine]);
 			GUILayout.EndHorizontal ();
 			GUILayout.EndArea ();
 		}
@@ -39,17 +39,15 @@ public class BubbleWords : MonoBehaviour {
 	void Talk(Collider col){
 		this.enabled = true;
 		npcCol = col.gameObject;
-		this.conversation = col.gameObject.GetComponent<NPCScript>().conversation;
-		line = conversation.Lines[0];
+
 
 	}
 
 
 	void OnTriggerEnter(Collider col){
-		print ("Hi");
 		//If we collide with an NPC
 		if (col.gameObject.tag == "NPC") {
-			
+			conversation = col.GetComponent<NPCScript>().conversation;
 			gameObject.SendMessage("Talk",col);
 			col.gameObject.SendMessage("Talk",col);
 		}
@@ -65,8 +63,3 @@ public class BubbleWords : MonoBehaviour {
 
 }
 
-[System.Serializable]
-
-public class Conversation {
-	public string[] Lines;
-}
