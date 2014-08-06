@@ -33,8 +33,15 @@ public class Factory : MonoBehaviour {
 		//AssetDatabase.CreateAsset(c,"Assets/Conversations/NewConversation.asset");
 		//AssetDatabase.SaveAssets();
 		var s = ScriptableObject.CreateInstance<GameSave> ();
-		s.saveTime = System.DateTime.Now.ToString();
-		AssetDatabase.CreateAsset(s,"Assets/GameSaves/GameSave.asset");
+		string t = System.DateTime.Now.ToString();
+		string assetName = t.Replace("/", "-");
+		assetName = assetName.Replace(" ", "-");
+		assetName = assetName.Replace(":", "-");
+		Debug.Log(assetName);
+		s.saveTime = t;
+		//Application.CaptureScreenshot("Assets/GameSaves/t.jpg");
+		//s.saveScreen = "Assets/GameSaves/t.png";
+		AssetDatabase.CreateAsset(s,"Assets/GameSaves/"+assetName+".asset");
 	}
 
 }
