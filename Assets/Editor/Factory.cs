@@ -25,5 +25,17 @@ public class Factory : MonoBehaviour {
 		var i = ScriptableObject.CreateInstance<InventoryItem> ();
 		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/NewItem.asset");
 	}
+
+	[MenuItem("Assets/Create/GameSave")]
+	public static void CreateGamesave ()
+	{
+		//var c = new Conversation();
+		//AssetDatabase.CreateAsset(c,"Assets/Conversations/NewConversation.asset");
+		//AssetDatabase.SaveAssets();
+		var s = ScriptableObject.CreateInstance<GameSave> ();
+		s.saveTime = System.DateTime.Now.ToString();
+		AssetDatabase.CreateAsset(s,"Assets/GameSaves/GameSave.asset");
+	}
+
 }
 
