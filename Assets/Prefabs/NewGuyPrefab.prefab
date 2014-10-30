@@ -1661,8 +1661,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100116}
-  m_LocalRotation: {x: -.00183790969, y: -.989292026, z: .140515059, w: -.0394138135}
-  m_LocalPosition: {x: .0355148315, y: 1.40605187, z: 1.04333496}
+  m_LocalRotation: {x: -.000396107876, y: -.983495235, z: .176579788, w: -.0394546613}
+  m_LocalPosition: {x: -.0476226807, y: 1.79147029, z: 1.88555908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400114}
@@ -1693,7 +1693,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 512
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 2a40e3e4d23c16041b3b385941c0455f, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: e683c070f2ef8c543ae4a4521c624983, type: 2}
   m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 0
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkByDefault: 0
-  lookInCameraDirection: 1
+  lookInCameraDirection: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1860,15 +1860,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equiped:
-    meeleWeapon: {fileID: 0}
-    rangeWeapon: {fileID: 0}
-    helmet: {fileID: 0}
-    suit: {fileID: 0}
+    meeleWeapon: {fileID: 11400000, guid: dba367fec2ffaf347a256186c227aad0, type: 2}
+    rangeWeapon: {fileID: 11400000, guid: 28ff3c8cd469cfb4588d15ffe3e1ef25, type: 2}
+    helmet: {fileID: 11400000, guid: cdc45435316fbd149a5657754e8da58b, type: 2}
+    suit: {fileID: 11400000, guid: 380cfe64f63ddf64fac3bc491d3863fe, type: 2}
   inventory:
-    meeleWeapons: []
-    rangeWapon: []
-    helmets: []
-    suits: []
+    meeleWeapons:
+    - {fileID: 11400000, guid: dba367fec2ffaf347a256186c227aad0, type: 2}
+    - {fileID: 11400000, guid: 918ba00797b8c4047a3fad3b2f4b059a, type: 2}
+    rangeWapon:
+    - {fileID: 11400000, guid: 7c8ebb45fb266704eb1857cc623e58a8, type: 2}
+    - {fileID: 11400000, guid: c6f9cf0b15695ef48965220890006877, type: 2}
+    helmets:
+    - {fileID: 11400000, guid: 86a24a955f94f0545b35467d3b786176, type: 2}
+    - {fileID: 11400000, guid: 3ae9cdc2c1b1a614badb827efb12545d, type: 2}
+    suits:
+    - {fileID: 11400000, guid: 893f7202c6911b64fa4b7c154390fbe6, type: 2}
     potions: []
   vitalStats:
     hP:
@@ -1888,15 +1895,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100114}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4aab3cef26b8f43b7b63471ca2b8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tabs: []
-  currentMenu: 0
-  skin: {fileID: 0}
-  playerStats: {fileID: 0}
+  currentMenu: 1
+  skin: {fileID: 11400000, guid: 4faaed46cf3b9ca47b0ee75a503cb505, type: 2}
+  playerStats: {fileID: 11400004}
   layout:
     mWeaponsScroll: {x: 0, y: 0}
     rWeaponsScroll: {x: 0, y: 0}
@@ -1904,9 +1911,9 @@ MonoBehaviour:
     helmetScroll: {x: 0, y: 0}
     equipScroll: {x: 0, y: 0}
     potionScroll: {x: 0, y: 0}
-    w: 727
-    h: 454
-    camView: {fileID: 0}
+    w: 877
+    h: 548
+    camView: {fileID: 8400000, guid: e683c070f2ef8c543ae4a4521c624983, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

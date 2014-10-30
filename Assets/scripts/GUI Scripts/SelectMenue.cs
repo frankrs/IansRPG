@@ -318,7 +318,7 @@ public class Layout{
 	public Vector2 potionScroll = Vector2.zero;
 	public int w;
 	public int h;
-	public Texture2D camView;
+	public RenderTexture camView;
 }
 
 
