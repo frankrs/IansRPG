@@ -10,7 +10,7 @@ public class BubbleWords : MonoBehaviour {
 	private GameObject npcCol;
 	public Conversation conversation;
 	public int converseLine = 0;
-	public GUISkin skin;
+
 
 
 	// Use this for initialization
@@ -34,9 +34,6 @@ public class BubbleWords : MonoBehaviour {
 	}
 
 	void OnGUI(){
-
-		// set skin
-		GUI.skin = skin;
 
 		if (talking) {
 			GUILayout.BeginArea (new Rect (Screen.width * .25f, Screen.height * .75f, Screen.width * .51f, Screen.height * .25f));

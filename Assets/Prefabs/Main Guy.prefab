@@ -28,8 +28,6 @@ GameObject:
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400006}
-  - 114: {fileID: 11400004}
   m_Layer: 8
   m_Name: Main Guy
   m_TagString: Player
@@ -69,21 +67,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &100008
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400008}
-  m_Layer: 0
-  m_Name: Suitcase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -109,7 +92,6 @@ Transform:
   - {fileID: 400004}
   - {fileID: 400000}
   - {fileID: 400006}
-  - {fileID: 400008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400004
@@ -136,18 +118,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 2
---- !u!4 &400008
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.26397777, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400002}
-  m_RootOrder: 3
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -217,87 +187,6 @@ MonoBehaviour:
   xBoxB: 331
   conversation: {fileID: 0}
   converseLine: 0
-  skin: {fileID: 11400000, guid: 7953503d9e83f8d469b84619849edd4e, type: 2}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae8de50b768cb8498ac9e8019a076db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  equiped:
-    meeleWeapon: {fileID: 11400000, guid: 0289ddf578737ee45bbf610a75f4029d, type: 2}
-    rangeWeapon: {fileID: 11400000, guid: 3717f0c4b2185b54c847372748f3b09f, type: 2}
-    helmet: {fileID: 11400000, guid: 01fcd4e525a1a1c489d333217392220f, type: 2}
-    suit: {fileID: 11400000, guid: bb0efcabcbf6cc0428067e92b247b56c, type: 2}
-  inventory:
-    meeleWeapons:
-    - {fileID: 11400000, guid: d2aebce8ccbce4542a694a64f42af975, type: 2}
-    - {fileID: 11400000, guid: dba367fec2ffaf347a256186c227aad0, type: 2}
-    - {fileID: 11400000, guid: 918ba00797b8c4047a3fad3b2f4b059a, type: 2}
-    rangeWapon:
-    - {fileID: 11400000, guid: 28ff3c8cd469cfb4588d15ffe3e1ef25, type: 2}
-    - {fileID: 11400000, guid: 7c8ebb45fb266704eb1857cc623e58a8, type: 2}
-    - {fileID: 11400000, guid: c6f9cf0b15695ef48965220890006877, type: 2}
-    helmets:
-    - {fileID: 11400000, guid: 3ae9cdc2c1b1a614badb827efb12545d, type: 2}
-    - {fileID: 11400000, guid: 86a24a955f94f0545b35467d3b786176, type: 2}
-    - {fileID: 11400000, guid: a59ef4e8114913d428864c4111e78987, type: 2}
-    - {fileID: 11400000, guid: cdc45435316fbd149a5657754e8da58b, type: 2}
-    suits:
-    - {fileID: 11400000, guid: 893f7202c6911b64fa4b7c154390fbe6, type: 2}
-    - {fileID: 11400000, guid: 615acef23451d1845808c927e46b98d0, type: 2}
-    - {fileID: 11400000, guid: 380cfe64f63ddf64fac3bc491d3863fe, type: 2}
-    potions:
-    - {fileID: 11400000, guid: 3d1d107afd13dd64b81ea55af4c9727e, type: 2}
-    - {fileID: 11400000, guid: 8cbb0a01cb802d04ba840d8d6a3b733e, type: 2}
-    - {fileID: 11400000, guid: a84944fdd62da4b4a8d0eaeaea2c53a9, type: 2}
-  vitalStats:
-    hP:
-      current: 100
-      max: 100
-    manna:
-      current: 100
-      max: 100
-    xp:
-      current: 0
-      max: 0
-    gold: 0
-    xpLevel: 0
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f4aab3cef26b8f43b7b63471ca2b8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tabs:
-  - name: Inventory
-    menu: 0
-  - name: Placeholder
-    menu: 1
-  - name: New Placeholder
-    menu: 2
-  currentMenu: 0
-  skin: {fileID: 11400000, guid: 7953503d9e83f8d469b84619849edd4e, type: 2}
-  playerStats: {fileID: 11400004}
-  layout:
-    mWeaponsScroll: {x: 0, y: 0}
-    rWeaponsScroll: {x: 0, y: 47.1953125}
-    armourScroll: {x: 0, y: 0}
-    helmetScroll: {x: 0, y: 98.59375}
-    equipScroll: {x: 0, y: 0}
-    potionScroll: {x: 0, y: 0}
-    w: 1087
-    h: 679
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

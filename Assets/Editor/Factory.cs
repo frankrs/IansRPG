@@ -16,43 +16,14 @@ public class Factory : MonoBehaviour {
 	}
 
 
-	[MenuItem("Assets/Create/InventoryItems/Weapons/MeeleWeapon")]
-	public static void CreateMeeleWeapon ()
+	[MenuItem("Assets/Create/InventoryItem")]
+	public static void CreateInventoryItem ()
 	{
 		//var c = new Conversation();
 		//AssetDatabase.CreateAsset(c,"Assets/Conversations/NewConversation.asset");
 		//AssetDatabase.SaveAssets();
-		var i = ScriptableObject.CreateInstance<MeeleWeapon> ();
-		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/MeeleWeapons/NewMeeleWeapon.asset");
-	}
-
-
-	[MenuItem("Assets/Create/InventoryItems/Weapons/RangeWeapon")]
-	public static void CreateRangeWeapon ()
-	{
-		var i = ScriptableObject.CreateInstance<RangeWeapon> ();
-		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/RangeWeapons/NewRangeWeapon.asset");
-	}
-
-	[MenuItem("Assets/Create/InventoryItems/Armour/Helmet")]
-	public static void CreateHelmet ()
-	{
-		var i = ScriptableObject.CreateInstance<Helmet> ();
-		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/Helmets/NewHelmet.asset");
-	}
-
-	[MenuItem("Assets/Create/InventoryItems/Armour/Suit")]
-	public static void CreateSuit ()
-	{
-		var i = ScriptableObject.CreateInstance<Suit> ();
-		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/Suits/NewSuit.asset");
-	}
-
-	[MenuItem("Assets/Create/InventoryItems/Potions/Potion")]
-	public static void CreatePotion ()
-	{
-		var i = ScriptableObject.CreateInstance<Potion> ();
-		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/Potions/NewPotion.asset");
+		var i = ScriptableObject.CreateInstance<InventoryItem> ();
+		AssetDatabase.CreateAsset(i,"Assets/InventoryItems/NewItem.asset");
 	}
 
 	[MenuItem("Assets/Create/GameSave")]

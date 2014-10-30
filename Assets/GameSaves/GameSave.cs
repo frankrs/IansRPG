@@ -10,3 +10,10 @@ public class GameSave : ScriptableObject {
 }
 
 
+[System.Serializable]
+public class Inventory{
+	public InventoryItem[] weapons;
+	public InventoryItem[] spells;
+	public InventoryItem[] potions;
+	public InventoryItem[] aromr;
+}
