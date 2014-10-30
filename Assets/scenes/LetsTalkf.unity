@@ -21959,11 +21959,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 59bb103687cf8c240ad0f5291cdcd0e3, type: 2}
       propertyPath: layout.w
-      value: 1087
+      value: 755
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 59bb103687cf8c240ad0f5291cdcd0e3, type: 2}
       propertyPath: layout.h
-      value: 679
+      value: 472
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 59bb103687cf8c240ad0f5291cdcd0e3, type: 2}
       propertyPath: layout.camView
@@ -21980,7 +21980,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 59bb103687cf8c240ad0f5291cdcd0e3, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 59bb103687cf8c240ad0f5291cdcd0e3, type: 2}
       propertyPath: layout.equipScroll.y
@@ -26523,7 +26523,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1239082623}
   m_GameObject: {fileID: 1441795111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4aab3cef26b8f43b7b63471ca2b8f9, type: 3}
   m_Name: 
@@ -26545,8 +26545,8 @@ MonoBehaviour:
     helmetScroll: {x: 0, y: 98.59375}
     equipScroll: {x: 0, y: 52.144928}
     potionScroll: {x: 0, y: 0}
-    w: 1087
-    h: 679
+    w: 755
+    h: 472
     camView: {fileID: 8400000, guid: 2a40e3e4d23c16041b3b385941c0455f, type: 2}
 --- !u!114 &1441795118
 MonoBehaviour:
