@@ -78,7 +78,7 @@ public class BubbleWords : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		//If we collide with an NPC
 		if (col.gameObject.tag == "NPC") {
-			conversation = col.GetComponent<NPCScript>().conversation;
+			conversation = col.GetComponent<NPCScript>().npcTalk.conversation;
 			gameObject.SendMessage("Talk",col);
 			col.gameObject.SendMessage("Talk",col);
 		}

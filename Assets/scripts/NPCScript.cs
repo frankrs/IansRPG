@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class NPCScript : MonoBehaviour {
-	public Conversation conversation;
+
+	public NPCTalk npcTalk; 
+
+	public NPCMovement npcMovement;
 
 	// Use this for initialization
 	void Start () {
@@ -20,4 +23,17 @@ public class NPCScript : MonoBehaviour {
 	}
 
 
+}
+
+
+[System.Serializable]
+public class NPCMovement{
+	public CharacterController characterController;
+	public Animator anim;
+	public NavMeshAgent nav;
+}
+
+[System.Serializable]
+public class NPCTalk{
+	public Conversation conversation;
 }

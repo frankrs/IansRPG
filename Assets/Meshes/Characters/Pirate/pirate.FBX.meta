@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: 0df8cfa150cdff5419bb5398b2011f7a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Base Human
+    100002: //RootNode
+    100004: pirate retop
+    100006: PirateHead
+    100008: PirateLCalf
+    100010: PirateLCollarbone
+    100012: PirateLFoot
+    100014: PirateLForearm
+    100016: PirateLPalm
+    100018: PirateLPlatform
+    100020: PirateLThigh
+    100022: PirateLUpperarm
+    100024: PirateNeck1
+    100026: PirateNeck2
+    100028: PiratePelvis
+    100030: PirateRCalf
+    100032: PirateRCollarbone
+    100034: PirateRFoot
+    100036: PirateRForearm
+    100038: PirateRibcage
+    100040: PirateRPalm
+    100042: PirateRPlatform
+    100044: PirateRThigh
+    100046: PirateRUpperarm
+    100048: PirateSpine1
+    100050: PirateSpine2
+    100052: PirateSpine3
+    100054: PirateSpine4
+    400000: Base Human
+    400002: //RootNode
+    400004: pirate retop
+    400006: PirateHead
+    400008: PirateLCalf
+    400010: PirateLCollarbone
+    400012: PirateLFoot
+    400014: PirateLForearm
+    400016: PirateLPalm
+    400018: PirateLPlatform
+    400020: PirateLThigh
+    400022: PirateLUpperarm
+    400024: PirateNeck1
+    400026: PirateNeck2
+    400028: PiratePelvis
+    400030: PirateRCalf
+    400032: PirateRCollarbone
+    400034: PirateRFoot
+    400036: PirateRForearm
+    400038: PirateRibcage
+    400040: PirateRPalm
+    400042: PirateRPlatform
+    400044: PirateRThigh
+    400046: PirateRUpperarm
+    400048: PirateSpine1
+    400050: PirateSpine2
+    400052: PirateSpine3
+    400054: PirateSpine4
+    4300000: pirate retop
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pirate retop
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: PiratePelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLThigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRThigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLCalf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRCalf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateSpine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateSpine3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateNeck1
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateHead
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLUpperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRUpperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLForearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRForearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateLPalm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PirateRPalm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: pirate(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Base Human
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: .50000006, y: -.50000006, z: -.49999997, w: .49999997}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PiratePelvis
+      position: {x: 3.99690272e-08, y: .631400228, z: -.0618427806}
+      rotation: {x: .499126971, y: -.50087142, z: -.49912703, w: .500871539}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateLThigh
+      position: {x: .0319230258, y: .023230521, z: .181497455}
+      rotation: {x: -.105425037, y: .990986586, z: .0143020479, w: .0814042762}
+      scale: {x: 1.00000012, y: .999999881, z: 1}
+      transformModified: 1
+    - name: PirateLCalf
+      position: {x: -.328870237, y: -1.81198118e-06, z: -1.14440911e-06}
+      rotation: {x: .000783678843, y: .0208329409, z: .338340878, w: .940792739}
+      scale: {x: 1, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: PirateLFoot
+      position: {x: -.303207397, y: 2.38418574e-09, z: 1.90734859e-08}
+      rotation: {x: .00062981894, y: .0659041479, z: -.829138935, w: .555144012}
+      scale: {x: .99999994, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: PirateRThigh
+      position: {x: .0319230631, y: .023230521, z: -.181497455}
+      rotation: {x: -.105464563, y: .990987599, z: -.0143265985, w: -.0813365504}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: PirateRCalf
+      position: {x: -.328870237, y: -1.79290771e-06, z: 1.14440911e-06}
+      rotation: {x: -.000979521894, y: -.0206493866, z: .338342816, w: .940795839}
+      scale: {x: 1, y: 1.00000024, z: .99999994}
+      transformModified: 1
+    - name: PirateRFoot
+      position: {x: -.303207397, y: 2.38418574e-09, z: 0}
+      rotation: {x: -.000421657314, y: -.0658963695, z: -.829225302, w: .55501616}
+      scale: {x: .999999583, y: 1.00000012, z: .999999702}
+      transformModified: 1
+    - name: PirateSpine1
+      position: {x: -.0355389006, y: -.00271910173, z: -6.748337e-09}
+      rotation: {x: -3.14937623e-08, y: 2.40389539e-08, z: .0643854663, w: -.997925162}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: PirateSpine2
+      position: {x: -.150532916, y: -9.53674295e-09, z: 0}
+      rotation: {x: -2.76814285e-06, y: -1.38874967e-07, z: -.0839601606, w: -.9964692}
+      scale: {x: .99999994, y: .999999702, z: .999999881}
+      transformModified: 1
+    - name: PirateSpine3
+      position: {x: -.134989247, y: 0, z: 0}
+      rotation: {x: -2.84069188e-06, y: 2.05590254e-07, z: .0259351581, w: .999663711}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: PirateSpine4
+      position: {x: -.0917365253, y: -4.76837148e-09, z: 0}
+      rotation: {x: -1.61502776e-08, y: 3.55675702e-08, z: .0732197165, w: -.997315884}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateRibcage
+      position: {x: -.121889643, y: 0, z: -4.54747341e-15}
+      rotation: {x: -7.49078808e-08, y: 1.6057113e-08, z: -.0259707123, w: -.999662697}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateLCollarbone
+      position: {x: .0249718465, y: .0504815131, z: .108127609}
+      rotation: {x: -.0070874556, y: .801164567, z: .102234624, w: .589604378}
+      scale: {x: .999999821, y: .999999881, z: .999999642}
+      transformModified: 1
+    - name: PirateLUpperarm
+      position: {x: -.115352549, y: 1.04904174e-07, z: 0}
+      rotation: {x: .159774736, y: -.183111832, z: -.0258654281, w: .969676852}
+      scale: {x: .99999994, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: PirateLForearm
+      position: {x: -.198851421, y: 1.81167479e-06, z: -3.60665126e-07}
+      rotation: {x: .180964991, y: -.0208436847, z: -.0450419895, w: .982236505}
+      scale: {x: 1.00000167, y: .999998391, z: .999999881}
+      transformModified: 1
+    - name: PirateLPalm
+      position: {x: -.193140328, y: 4.34034928e-06, z: -3.88854596e-06}
+      rotation: {x: -.782007694, y: .150050327, z: -.0589111559, w: .602061808}
+      scale: {x: 1.00000393, y: .999996006, z: 1.00000024}
+      transformModified: 1
+    - name: PirateRCollarbone
+      position: {x: .0249718465, y: .0504815094, z: -.108127609}
+      rotation: {x: -.00708767818, y: .801164627, z: -.102234118, w: -.589604199}
+      scale: {x: .999999642, y: .999999762, z: .999999821}
+      transformModified: 1
+    - name: PirateRUpperarm
+      position: {x: -.115352571, y: -9.5367426e-08, z: 0}
+      rotation: {x: -.159774855, y: .183111623, z: -.0258692056, w: .969676733}
+      scale: {x: 1.00000012, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: PirateRForearm
+      position: {x: -.198842898, y: -6.5554201e-07, z: 3.73198191e-07}
+      rotation: {x: -.389622986, y: .0301146526, z: -.0394514054, w: .91963619}
+      scale: {x: .999998152, y: 1.00000131, z: 1.00000024}
+      transformModified: 1
+    - name: PirateRPalm
+      position: {x: -.193083256, y: -3.2003461e-06, z: -1.97312275e-07}
+      rotation: {x: .913327575, y: -.160283864, z: -.0171562023, w: .373961985}
+      scale: {x: .999996305, y: 1.00000429, z: 1.00000012}
+      transformModified: 1
+    - name: PirateNeck1
+      position: {x: -.000617523154, y: -.00271909707, z: -5.22189092e-09}
+      rotation: {x: 1.27243993e-10, y: -5.99810761e-08, z: .00843244791, w: -.999964535}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateNeck2
+      position: {x: -.0836510435, y: -4.76837148e-09, z: 4.54747341e-15}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateHead
+      position: {x: -.0775055662, y: 4.76837148e-09, z: 0}
+      rotation: {x: -1.27243993e-10, y: 5.99810761e-08, z: -.00843244791, w: -.999964535}
+      scale: {x: .999999821, y: .999999762, z: .999999881}
+      transformModified: 1
+    - name: pirate retop
+      position: {x: .631611943, y: .0596394241, z: 5.37880247e-08}
+      rotation: {x: -.499126852, y: .500871658, z: .499126852, w: .500871658}
+      scale: {x: 1, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: PirateLPlatform
+      position: {x: -.294982076, y: 1.2864122e-09, z: .0348467045}
+      rotation: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PirateRPlatform
+      position: {x: .294982076, y: 1.28639654e-09, z: .0348467939}
+      rotation: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
