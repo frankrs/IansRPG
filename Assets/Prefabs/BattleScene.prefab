@@ -27,6 +27,51 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   m_Layer: 0
+  m_Name: BG2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  m_Layer: 0
+  m_Name: PlayerPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  m_Layer: 0
+  m_Name: CameraSeat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  m_Layer: 0
   m_Name: BG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +88,10 @@ Transform:
   m_LocalPosition: {x: 107.077957, y: 4.810812, z: 151.03299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400008}
   - {fileID: 400002}
+  - {fileID: 400006}
+  - {fileID: 400004}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400002
@@ -52,8 +100,44 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: .934975445, z: 0, w: .354712486}
-  m_LocalPosition: {x: -1.66873932, y: -1.35728264, z: 3.27168274}
+  m_LocalRotation: {x: 0, y: .999917507, z: 0, w: .0128449937}
+  m_LocalPosition: {x: 1.36795044, y: -1.35728312, z: 1.62515259}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 1
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: .0675067976, z: 0, w: -.997718811}
+  m_LocalPosition: {x: -1.92966461, y: -1.35728312, z: -.59942627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 3
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: .142332733, y: -.641200304, z: .102271914, w: .747090459}
+  m_LocalPosition: {x: 5.79495239, y: 2.16903877, z: -.112228394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 2
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: .999917507, z: 0, w: .0128448289}
+  m_LocalPosition: {x: -2.0194931, y: -1.35728264, z: 2.89627075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -97,11 +181,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stage:
-    bGPlaces: []
+    playerPlace: {fileID: 400004}
+    bGPlaces:
+    - {fileID: 400008}
+    - {fileID: 400002}
     gGPlaces: []
-    cameraPlace: {fileID: 0}
+    battleCam: {fileID: 100000, guid: 40ae67e09d1dcf04aa0155781ec1a2b9, type: 2}
+    cameraPlace: {fileID: 400006}
+    fov: 0
   battleEngine:
-    bGuys: []
+    bGuys:
+    - {fileID: 0}
+    - {fileID: 0}
     gGuys: []
     battleTurn: 0
     fighterState: 0

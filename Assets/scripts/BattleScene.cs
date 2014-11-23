@@ -16,20 +16,36 @@ public class BattleScene : MonoBehaviour {
 
 
 	void SetUpBattle(){
+		// tell on the badguys to get in place
 		for(int i=0;i<battleEngine.bGuys.Length;i++){
 			GameObject bg;
 			bg = battleEngine.bGuys[i];
 			bg.SendMessage("BattleStations",stage.bGPlaces[i]);
 		}
+
+		// create a battlecam
+		stage.battleCam = GameObject.Instantiate(stage.battleCam,Camera.main.transform.position,Camera.main.transform.rotation) as GameObject;
+		Camera.main.enabled = false;
+		//Camera.main.GetComponent<AudioListener>().enabled = false;
+		stage.battleCam.SendMessage("SetFOV",stage.fov);
+		stage.battleCam.SendMessage("BattleStations",stage.cameraPlace);
+
+		// tell players object to get into place
+		var player = GameObject.FindGameObjectWithTag("Player");
+		player.SendMessage("BattleStations",stage.playerPlace);
+
 	}
 }
 
 
 [System.Serializable]
 public class Stage{
+	public Transform playerPlace;
 	public Transform[] bGPlaces;
 	public Transform[] gGPlaces;
+	public GameObject battleCam = null;
 	public Transform cameraPlace;
+	public float fov = 60;
 }
 
 [System.Serializable]
