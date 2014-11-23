@@ -53,8 +53,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: .951032996, z: 0, w: .309089422}
-  m_LocalPosition: {x: 102.148041, y: 3.00324273, z: 159.259979}
+  m_LocalRotation: {x: 0, y: .651309431, z: 0, w: .758812308}
+  m_LocalPosition: {x: 96.0718918, y: 3.00324273, z: 164.026047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -100,8 +100,8 @@ MonoBehaviour:
     potions: []
   vStats:
     hP:
-      current: 0
-      max: 0
+      current: 100
+      max: 100
     manna:
       current: 0
       max: 0
@@ -110,6 +110,9 @@ MonoBehaviour:
       max: 0
     gold: 0
     xpLevel: 0
+  bScene: {fileID: 0}
+  team: 1
+  battleController: {fileID: 9100000, guid: 559497b3dd554814dbf11c031aa5bdc9, type: 2}
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

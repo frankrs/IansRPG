@@ -17,10 +17,11 @@ public class BattleScene : MonoBehaviour {
 
 	void SetUpBattle(){
 		// tell on the badguys to get in place
-		for(int i=0;i<battleEngine.bGuys.Length;i++){
+		for(int i=0;i<battleEngine.badGuys.Length;i++){
 			GameObject bg;
-			bg = battleEngine.bGuys[i];
+			bg = battleEngine.badGuys[i].character;
 			bg.SendMessage("BattleStations",stage.bGPlaces[i]);
+			bg.SendMessage("SetBattle",this);
 		}
 
 		// create a battlecam
@@ -35,6 +36,31 @@ public class BattleScene : MonoBehaviour {
 		player.SendMessage("BattleStations",stage.playerPlace);
 
 	}
+
+	// this method is called when fighter enters and is ready to go
+	public void AddFighter(Fighter f){
+		// if the message is sent by a badguy that hes ready
+		if(f.team == Team.BadGuys){
+			// test the gameobgect sent in the fighter var to see what slot we need
+			for(int i=0;i<battleEngine.badGuys.Length;i++){
+				GameObject fGo;
+				fGo = battleEngine.badGuys[i].character;
+				if(fGo == f.character){
+					UpdateFighter(f,i);
+				}
+			}
+		}
+
+	}
+
+
+	public void UpdateFighter(Fighter f, int index){
+		if(f.team == Team.BadGuys){
+			battleEngine.badGuys[index] = f;
+		}
+
+	}
+
 }
 
 
@@ -50,10 +76,9 @@ public class Stage{
 
 [System.Serializable]
 public class BattleEngine{
-	public GameObject[] bGuys;
-	public GameObject[] gGuys;
+	public Fighter[] badGuys;
+	public Fighter[] goodGuys;
 	public BattleTurn battleTurn;
-	public FighterState fighterState;
 }
 
 [System.Serializable]
@@ -64,6 +89,22 @@ public enum BattleTurn{
 
 [System.Serializable]
 public enum FighterState{
-	thinking,attacking,dead
+	outOfPlace,ready,attacking,dead
 }
+
+[System.Serializable]
+public enum Team{
+	GoodGuys,BadGuys
+}
+
+[System.Serializable]
+public class  Fighter{
+	public GameObject character;
+	public FighterState fighterState;
+	public VitalStats stats;
+	public Team team;
+}
+
+
+
 

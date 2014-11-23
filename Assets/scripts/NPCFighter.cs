@@ -5,27 +5,42 @@ public class NPCFighter : NPCScript {
 
 	public Inventory inventory;
 	public VitalStats vStats;
+	public BattleScene bScene;
+	public Team team;
+	public RuntimeAnimatorController battleController;
 
+	void SetBattle(BattleScene b){
+		bScene = b;
+	}
 
 	// corotine that runs to battlestation
 	IEnumerator BattleStations (Transform tran){
 		npcMovement.nav.enabled = true;
 		npcMovement.nav.SetDestination(tran.position);
+		npcMovement.anim.runtimeAnimatorController = battleController;
 		npcMovement.anim.applyRootMotion = false;
-		npcMovement.anim.SetBool("Run",true);
 		while(Vector3.Distance(transform.position, npcMovement.nav.destination) >= .25f){
 			yield return new WaitForEndOfFrame();
 		}
 		npcMovement.nav.enabled = false;
+		npcMovement.anim.SetTrigger("Ready");
 		npcMovement.anim.applyRootMotion = true;
-		npcMovement.anim.SetBool("Turn",true);
-		npcMovement.anim.SetFloat("LookAngle",Quaternion.Angle(transform.rotation, tran.rotation));
-		while(Mathf.Abs(npcMovement.anim.GetFloat("LookAngle"))>5f){
-			npcMovement.anim.SetFloat("LookAngle",Quaternion.Angle(transform.rotation, tran.rotation));
-			yield return new WaitForEndOfFrame();
-		}
-		npcMovement.anim.SetBool("Run",false);
-		npcMovement.anim.SetBool("Turn",false);
+		// turn character to face proper direction
+		transform.rotation = tran.rotation;
+		ImReady();
 	}
+
+
+
+
+	void ImReady(){
+		var f = new Fighter();
+		f.character = gameObject;
+		f.fighterState = FighterState.ready;
+		f.stats = vStats;
+		f.team = team;
+		bScene.AddFighter(f);
+	}
+
 
 }
