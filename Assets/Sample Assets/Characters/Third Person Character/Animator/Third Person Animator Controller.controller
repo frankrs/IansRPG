@@ -763,7 +763,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 1cb8ed3cbba15f0479fbae54e0a963df, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 96, y: 48, z: 0}
+  m_Position: {x: 84, y: 12, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -836,5 +836,5 @@ StateMachine:
       - {fileID: 110172777}
       - {fileID: 110123257}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 144, y: 288, z: 0}
+  m_AnyStatePosition: {x: 108, y: 264, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
