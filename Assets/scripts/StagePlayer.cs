@@ -5,12 +5,16 @@ public class StagePlayer : MonoBehaviour {
 
 	public MonoBehaviour[] moveControls;
 	public NPCMovement move;
+	public RuntimeAnimatorController battleAnim;
+	public RuntimeAnimatorController normAnim;
 	
 		IEnumerator BattleStations (Transform tran){
 
 		//set the animator
+		move.anim.runtimeAnimatorController = battleAnim;
 		move.anim.applyRootMotion = false;
-		move.anim.SetBool("BattleWalk",true);
+
+
 
 		// turn on the navmaesh
 		move.nav.enabled = true;
@@ -21,12 +25,16 @@ public class StagePlayer : MonoBehaviour {
 			m.enabled = false;
 		}
 		// move until you are in place
-		while(Vector3.Distance(transform.position, move.nav.destination) >= .25f){
+		while(Vector3.Distance(transform.position, move.nav.destination) >= .1f){
 				yield return new WaitForEndOfFrame();
 			}
-		//turn to correct direction
-		transform.rotation = tran.rotation;
 
+		Debug.Log("letsfight");
+		//turn of navagent
+		move.nav.enabled = false;
+		//turn to correct direction
+		move.anim.SetTrigger("Ready");
+		transform.rotation = tran.rotation;
 		}
 
 }

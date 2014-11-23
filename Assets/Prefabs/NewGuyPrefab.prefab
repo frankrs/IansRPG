@@ -2009,6 +2009,8 @@ MonoBehaviour:
     characterController: {fileID: 0}
     anim: {fileID: 9500002}
     nav: {fileID: 19500000}
+  battleAnim: {fileID: 9100000, guid: 8fca1e6fe0ce1d6428ffb8bb0bcdaf02, type: 2}
+  normAnim: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
